@@ -1,0 +1,51 @@
+.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+.prelements-heading .title-inner .sub-text svg rect{
+	fill: var( --e-global-color-primary );
+}
+
+.prelements-heading .title-inner .sub-text svg line{
+	stroke: var( --e-global-color-primary );
+}
+
+.bs-sidebar .widget_nav_menu.widget_nav_menu ul li:hover, .bs-sidebar .widget_nav_menu#categories-2 ul li:hover, .bs-sidebar #categories-2.widget_nav_menu ul li:hover, .bs-sidebar #categories-2#categories-2 ul li:hover{
+	background: $primaryColor;
+	border-color: $primaryColor;
+}
+
+.bs-sidebar.dark-style .widget_text .rs-button .rs-btn:hover{
+	background: $primaryColor;
+}
+
+.rs-blog-details blockquote cite::before, .bs-sidebar .widget_medvillsocialiconwi_widget .footer_social li a{
+	color: #fff !important;
+}
+
+
+.bs-sidebar.dark-style .widget_custom_html .custom-html-widget .rs-contact-box .address-item:hover .address-icon{
+	background: $primaryColor;
+}
+
+.bs-sidebar.dark-style .widget_custom_html .custom-html-widget .rs-contact-box .address-item .address-text a:hover{
+	color: $primaryColor;
+}		
+
+                    .loader .loader-container:before{
+                border-top-color:#A5000D            }
+
+
+        
