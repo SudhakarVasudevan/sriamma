@@ -16459,7 +16459,10 @@ body .profile-body .profile-title {
 }
 .ekit-wid-con .profile-body .profile-title>a,
 body .profile-body .profile-title>a {
-    color: #000
+    color: #000;
+}
+.ekit-wid-con .profile-body .profile-title>a:hover {
+    color: #A5000D;
 }
 .ekit-wid-con .profile-body .profile-designation,
 body .profile-body .profile-designation {

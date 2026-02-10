@@ -1,7 +1,8 @@
 .elementor-kit-7 {
     --e-global-color-primary: #fff;
     --e-global-color-secondary: #0E0E0E;
-    --e-global-color-text: #667282;
+    /*--e-global-color-text: #667282;*/
+    --e-global-color-text: #FFFFFF;
     --e-global-color-accent: #a5000d;
     --e-global-color-4271826: #161515;
     --e-global-color-17c0fac: #3c3c3c;

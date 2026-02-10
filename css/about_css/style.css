@@ -387,6 +387,7 @@ figure.image-anime:hover:after{
 
 .elementor-icon-box-wrapper .elementor-icon-box-icon{
 	line-height: 0;
+	text-align: center;
 }
 
 /* Theme Header css */
