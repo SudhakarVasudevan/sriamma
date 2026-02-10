@@ -87,7 +87,7 @@
 .rs-breadcrumbs-meta-elementor li.rs-category ul li a {
     color: #fff;
     font-size: 15px;
-    font-weight: 400
+    font-weight: 400;
 }
 
 .dividers__on.dividers__shape_rihgt:after {
@@ -116,7 +116,7 @@ cite.rs_item_wrap::before {
     bottom: calc(100% - 70px);
     top: calc(100% - 70px);
     z-index: -1;
-    border-radius: 6px
+    border-radius: 6px;
 }
 
 .header-inner cite.rs_item_wrap {
@@ -5376,14 +5376,12 @@ body .rspopup_style1 .mfp-close {
     -webkit-box-shadow: 0 0 0 0 transparent inset;
     box-shadow: 0 0 transparent inset
 }
-
 .elementor-widget-RS-Table .rsdatatable-select select {
     margin: 0 10px;
     height: auto;
     padding: 8px 18px;
     border-radius: 5px
 }
-
 .elementor-widget-RS-Table table.dataTable thead th,.elementor-widget-RS-Table table.dataTable thead td {
     border-bottom: 0
 }
@@ -21065,9 +21063,13 @@ body.rtl,html[dir=rtl] {
     box-sizing: border-box
 }
 
+
 .elementor a {
     box-shadow: none;
-    text-decoration: none
+    text-decoration: none;
+    color: #000;
+    list-style: none;
+    transition: all .3s ease 0s
 }
 
 .elementor hr {
@@ -23301,11 +23303,13 @@ body.rtl .e-con {
 .elementor-element:where(:not(.e-con)):where(:not(.e-div-block-base)) .elementor-widget-container,.elementor-element:where(:not(.e-con)):where(:not(.e-div-block-base)):not(:has(.elementor-widget-container)) {
     transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s)
 }
-
 .elementor-heading-title {
     line-height: 1;
     margin: 0;
-    padding: 0
+    padding: 0;
+    mask-image: linear-gradient(black,transparent);
+-webkit-mask-image: linear-gradient(180deg,black 70%, transparent 100%);
+width:100%;
 }
 
 .elementor-button {
