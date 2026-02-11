@@ -1,3 +1,18 @@
+/*web scrolling bar style*/
+body.fancy-scrollbar::-webkit-scrollbar-track{
+	background-color: #0D0D0D;
+	border-left: 1px solid #A5000D;
+}
+
+body.fancy-scrollbar::-webkit-scrollbar{
+	width: 7px;
+	background-color: #A5000D;
+}
+
+body.fancy-scrollbar::-webkit-scrollbar-thumb{
+	background: #A5000D;
+}
+/**/
 .rs-breadcrumbs-meta-elementor {
     margin: 0;
     padding: 0;
