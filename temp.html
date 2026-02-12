@@ -1,0 +1,130 @@
+
+<style>
+/* Animations */
+@keyframes slide-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes slide-right {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 20px 0;
+  background: #0E0E0E;
+  white-space: nowrap;
+  position: relative;
+}
+
+/* Gradient fade effect */
+.logos::before,
+.logos::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 15%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.logos::before {
+  left: 0;
+  background: linear-gradient(to left, rgba(0,0,0,0), #0E0E0E);
+}
+
+.logos::after {
+  right: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0), #0E0E0E);
+}
+
+.logos-slide {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Row Directions */
+.row1 .logos-slide {
+  animation: slide-left 10s linear infinite;
+}
+
+.row2 .logos-slide {
+  animation: slide-right 10s linear infinite;
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+/* Logo Images */
+.logos-slide img {
+  height: 70px;
+  margin: 0 50px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: 0.4s ease;
+}
+
+.logos-slide img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Tablet Responsive */
+@media (max-width: 992px) {
+  .logos-slide img {
+    height: 55px;
+    margin: 0 35px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .logos {
+    padding: 25px 0;
+  }
+
+  .logos-slide img {
+    height: 40px;
+    margin: 0 25px;
+  }
+}
+</style>
+<!-- Row 1 -->
+<div class="logos row1" id="logo_carousal">
+  <div class="logos-slide">
+    <img src="/img/Logo/logo1.jpg">
+    <img src="/img/Logo/logo2.jpg">
+    <img src="/img/Logo/logo3.png">
+    <img src="/img/Logo/logo4.jpg">
+    <img src="/img/Logo/logo5.jpg">
+    <img src="/img/Logo/logo6.jpg">
+    <img src="/img/Logo/logo7.png">
+    <img src="/img/Logo/logo8.jpg">
+  </div>
+</div>
+
+<!-- Row 2 -->
+<div class="logos row2" id="logo_carousal">
+  <div class="logos-slide">
+    <img src="/img/Logo/logo9.jpg">
+    <img src="/img/Logo/logo10.png">
+    <img src="/img/Logo/logo11.png">
+    <img src="/img/Logo/logo12.jpg">
+    <img src="/img/Logo/logo13.jpg">
+    <img src="/img/Logo/logo14.jpg">
+    <img src="/img/Logo/logo15.png">
+    <img src="/img/Logo/logo16.jpg">
+  </div>
+</div>
+<script>
+["logo_carousal_1", "logo_carousal_2"].forEach(id => {
+  const logos = document.getElementById(id);
+  const slide = logos.querySelector(".logos-slide");
+  const clone = slide.cloneNode(true);
+  logos.appendChild(clone);
+});
+</script>

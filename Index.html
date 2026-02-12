@@ -409,10 +409,10 @@
 		<div data-elementor-type="wp-page" data-elementor-id="16735" class="elementor elementor-16735">
 			<div class="no-position  elementor-element elementor-element-d58309a e-con-full e-flex elementor-invisible e-con e-parent"
 				data-id="d58309a" data-element_type="container"
-				data-settings='{"background_background":"video","animation":"fadeIn","background_video_link":"https:\/\/demo.rstheme.com\/wordpress\/abuild\/wp-content\/uploads\/2025\/09\/video_construction_black.mp4","background_play_on_mobile":"yes"}'>
+				data-settings='{"background_background":"video","animation":"fadeIn","background_video_link":"/img/banner_video1.mp4","background_play_on_mobile":"yes"}'>
 				<div class="elementor-background-video-container" aria-hidden="true">
-					<video class="elementor-background-video-hosted" autoplay muted playsinline loop
-						src="/img/banner_video1.mp4" style="width: 1796.34px; height: 1010.44px;">
+					<video class="elementor-background-video-hosted" autoplay loop muted playsinline>
+						<source src="/img/banner_video1.mp4">
 					</video>
 				</div>
 				<div class="no-position  elementor-element elementor-element-60e2763 e-con-full e-flex e-con e-child"
@@ -457,7 +457,19 @@
 					</div>
 				</div>
 			</div>
-			<div class="no-position  elementor-element elementor-element-2098f3a e-flex e-con-boxed e-con e-parent"
+			<!--New logo Carouser-->
+<div id="logo_carousal"></div>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				fetch("temp.html")
+					.then(res => res.text())
+					.then(data => {
+						document.getElementById("logo_carousal").innerHTML = data;
+					});
+			});
+		</script>
+<!--New logo carousal scrolling Script-->
+		<!--***Old logo carousal***  <div class="no-position  elementor-element elementor-element-2098f3a e-flex e-con-boxed e-con e-parent"
 				data-id="2098f3a" data-element_type="container" data-settings='{"background_background":"classic"}'>
 				<div class="e-con-inner">
 					<div class="no-position  elementor-element elementor-element-cb67383 e-con-full e-flex e-con e-child"
@@ -634,7 +646,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>-->
 			<div class="no-position  elementor-element elementor-element-8828176 e-flex e-con-boxed e-con e-parent"
 				data-id="8828176" data-element_type="container" data-settings='{"background_background":"classic"}'>
 				<div class="e-con-inner">
@@ -2410,7 +2422,7 @@
 												<div class="team-content">
 													<h4 class="team-name">
 														<a href="#">
-															Cameron Williamson </a>
+															Cameron Williamson</a>
 													</h4>
 													<span class="team-title">Factory Director.</span>
 												</div>

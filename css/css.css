@@ -23915,8 +23915,8 @@ h1.entry-title {
     --margin-bottom: 0px;
     --margin-left: 0px;
     --margin-right: 0px;
-    --padding-top: 600px;
-    --padding-bottom: 0px;
+    --padding-top: 400px;
+    --padding-bottom: 200px;
     --padding-left: 160px;
     --padding-right: 0px;
 }
@@ -28810,7 +28810,7 @@ body.rtl .elementor-16735 .elementor-element.elementor-element-a6f58f6 {
 
 @media(min-width: 768px) {
     .elementor-16735 .elementor-element.elementor-element-01ccee9 {
-        --width:50%;
+        --width:100%;
     }
 
     .elementor-16735 .elementor-element.elementor-element-e1bc6a2 {
@@ -29180,7 +29180,7 @@ body.rtl .elementor-16735 .elementor-element.elementor-element-a6f58f6 {
 }
 
 .elementor-16742 .elementor-element.elementor-element-6469ee5 .rs-button .rs-btn:hover {
-    background-color: var( --e-global-color-primary );
+    background-color: #fff;
 }
 
 .elementor-16742 .elementor-element.elementor-element-6469ee5 > .elementor-widget-container {
@@ -29195,10 +29195,11 @@ body.rtl .elementor-16735 .elementor-element.elementor-element-a6f58f6 {
 .elementor-16742 .elementor-element.elementor-element-6469ee5 .rs-button:not(.style2) .rs-btn, .elementor-16742 .elementor-element.elementor-element-6469ee5 .rs-button.style2 .rs-btn span {
     border-style: solid;
     border-color: #FFFFFF17;
+    border-radius: 50%;
 }
 
 .elementor-16742 .elementor-element.elementor-element-6469ee5 .rs-button:not(.style2) .rs-btn, .elementor-16742 .elementor-element.elementor-element-6469ee5 .rs-button.style2 .rs-btn span.rs-btn-text {
-    padding: 14px 30px 16px 30px;
+    padding: 7px 15px 8px 15px;
 }
 
 .elementor-16742 .elementor-element.elementor-element-6469ee5 .rs-button:not(.style2) .rs-btn:hover, .elementor-16742 .elementor-element.elementor-element-6469ee5 .rs-button.style2 .rs-btn:hover .rs-btn-text, .elementor-16742 .elementor-element.elementor-element-6469ee5 .rs-button .rs-btn:hover i {
