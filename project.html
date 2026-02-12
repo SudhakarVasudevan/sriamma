@@ -455,7 +455,6 @@
     <div id="magic-cursor">
         <div id="ball"></div>
     </div>
-
     <a class="skip-link screen-reader-text" href="#content">
         Skip to content </a>
 
@@ -1461,7 +1460,16 @@
          
     </div>
     <!--footer html redirect-->
-   
+   <div id="rs-footer"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("footer.html")
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById("rs-footer").innerHTML = data;
+                });
+        });
+    </script>
     <script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/renovex/*"},{"not":{"href_matches":["/renovex/wp-*.php","/renovex/wp-admin/*","/renovex/wp-content/uploads/*","/renovex/wp-content/*","/renovex/wp-content/plugins/*","/renovex/wp-content/themes/renovex/*","/renovex/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
