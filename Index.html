@@ -395,6 +395,21 @@
                 </div>
             </div>              
         </div>-->
+	<div class="rs-offcanvas-area">
+	<div class="rsoffwrap"></div>
+	<!-- Canvas Menu start -->
+<nav class="right_menu_togle" data-lenis-prevent id="mobilemenu">
+	<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				fetch("nav.html")
+					.then(res => res.text())
+					.then(data => {
+						document.getElementById("mobilemenu").innerHTML = data;
+					});
+			});
+		</script>
+</nav>
+</div>
 	<div id="page" class="hfeed site is-page gsap-enable">
 		<div id="header"></div>
 		<script>
@@ -403,6 +418,19 @@
 					.then(res => res.text())
 					.then(data => {
 						document.getElementById("header").innerHTML = data;
+						document.querySelectorAll('.nav-expander').forEach(function(el) {
+				el.addEventListener('click', function(e) {
+					e.preventDefault(); // stop page jump
+					document.body.classList.toggle('nav-expanded');
+				});
+			});
+			document.querySelectorAll('.rsoffwrap-close').forEach(function(el) {
+				el.addEventListener('click', function(e) {
+					console.log("click");
+					e.preventDefault(); // stop page jump
+					document.body.classList.remove('nav-expanded');
+				});
+			});
 					});
 			});
 		</script>
