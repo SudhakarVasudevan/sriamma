@@ -443,31 +443,56 @@
     <meta name="msapplication-TileImage"content="/img/web_icon.png">
 </head>
 
-<body
-    class="archive post-type-archive post-type-archive-awaiken-project wp-custom-logo wp-theme-renovex tt-magic-cursor fancy-scrollbar elementor-default elementor-kit-13">
-    <!--preloader
-		<div class="theme-preloader">
-		<div class="loading-container">
-			<div class="loading"></div>
-			<div id="loading-icon"><img src="https://demo.awaikenthemes.com/renovex/wp-content/themes/renovex/assets/images/loader.svg" alt="Preloader"></div>
-		</div>
-	</div>-->
-    <div id="magic-cursor">
-        <div id="ball"></div>
-    </div>
-    <a class="skip-link screen-reader-text" href="#content">
-        Skip to content </a>
-
-    <div id="rs-header"></div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            fetch("header.html")
-                .then(res => res.text())
-                .then(data => {
-                    document.getElementById("rs-header").innerHTML = data;
-                });
-        });
-    </script>
+<body class="wp-singular page-template fancy-scrollbar page-template-elementor_header_footer page page-id-16735 wp-theme-abuild ehf-header ehf-footer ehf-template-abuild ehf-stylesheet-abuild rs-smoother-yes elementor-default elementor-template-full-width elementor-kit-10911 elementor-page elementor-page-16735">
+	
+        <!-- <div id="pre-load">
+            <button class="cancel-loader" type="button">Cancel Loader</button>
+            <div id="loader" class="loader">
+                <div class="loader-container">
+                    <div class="loader-icon"><img src="/img/web_icon.png" alt="S"></div>
+                </div>
+            </div>              
+        </div> -->
+		<div class="rs-offcanvas-area">
+	<div class="rsoffwrap"></div>
+	<!-- Canvas Menu start -->
+	 <div id="header"></div>
+<nav class="right_menu_togle" data-lenis-prevent id="mobilemenu">
+	<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				fetch("nav.html")
+					.then(res => res.text())
+					.then(data => {
+						document.getElementById("mobilemenu").innerHTML = data;
+					});
+			});
+		</script>
+</nav>
+</div>
+	<div id="page" class="hfeed site is-page gsap-enable">
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				fetch("header.html")
+					.then(res => res.text())
+					.then(data => {
+						document.getElementById("header").innerHTML = data;
+						document.querySelectorAll('.nav-expander').forEach(function(el) {
+				el.addEventListener('click', function(e) {
+					e.preventDefault(); // stop page jump
+					document.body.classList.toggle('nav-expanded');
+				});
+			});
+			document.querySelectorAll('.rsoffwrap-close').forEach(function(el) {
+				el.addEventListener('click', function(e) {
+					console.log("click");
+					e.preventDefault(); // stop page jump
+					document.body.classList.remove('nav-expanded');
+				});
+			});
+					});
+			});
+		</script>
 
     <main id="content" class="site-main">
         <div class="page-header"
@@ -1351,114 +1376,7 @@
             </div>
         </div>
     </main>
-    <div class="ekit-template-content-markup ekit-template-content-footer ekit-template-content-theme-support">
-        <div data-elementor-type="wp-post" data-elementor-id="2455" class="elementor elementor-2455">
-            <div class="elementor-element elementor-element-0976131 e-con-full e-flex e-con e-parent" data-id="0976131"
-                data-element_type="container" data-e-type="container">
-                <div class="elementor-element elementor-element-bc1c11d e-con-full e-flex e-con e-child"
-                    data-id="bc1c11d" data-element_type="container" data-e-type="container"
-                    data-settings='{"background_background":"classic"}'>
-                    <div class="elementor-element elementor-element-a329438 scrolling-content ticker-position-left elementor-widget elementor-widget-elementskit-content-ticker"
-                        data-id="a329438" data-element_type="widget" data-e-type="widget"
-                        data-settings='{"ekit_we_effect_on":"none"}'
-                        data-widget_type="elementskit-content-ticker.default">
-                        <div class="ekit-wid-con">
-                            <div id="content-ticker-a329438" class="ekit-content-ticker-wrapper"
-                                data-content-settings='{"type":"content_ticker","settingOptions":{"tickerSpeed":50,"tickerDirection":null,"tickerEffect":"marquee","tickerAutoPlay":null,"tickerDelay":3,"tickerReverseDirection":"","tickerGapBetween":"","tickerGrabCursor":null}}'>
-                                <div class="ekit-content-items">
-                                    <div class="ticker ekitMarqueeSwiper ekit-marquee">
-                                        <div class="marquee-wrapper">
-                                            <div class="elementor-repeater-item-34df3ff ekit-marquee-item ticker-item">
-                                                <img loading="lazy" width="30" height="30"
-                                                    src="https://demo.awaikenthemes.com/renovex/wp-content/uploads/2025/11/icon-asterisk.svg"
-                                                    class="attachment-full size-full wp-image-9055" alt="">
-                                                <div class="ekit-title-and-description">
-                                                    <a>Renovation &amp; Remodeling</a>
-                                                </div>
-                                            </div>
-                                            <div class="elementor-repeater-item-938d580 ekit-marquee-item ticker-item">
-                                                <img loading="lazy" width="30" height="30"
-                                                    src="https://demo.awaikenthemes.com/renovex/wp-content/uploads/2025/11/icon-asterisk.svg"
-                                                    class="attachment-full size-full wp-image-9055" alt="">
-                                                <div class="ekit-title-and-description">
-                                                    <a>Commercial Projects</a>
-                                                </div>
-                                            </div>
-                                            <div class="elementor-repeater-item-eb779fb ekit-marquee-item ticker-item">
-                                                <img loading="lazy" width="30" height="30"
-                                                    src="https://demo.awaikenthemes.com/renovex/wp-content/uploads/2025/11/icon-asterisk.svg"
-                                                    class="attachment-full size-full wp-image-9055" alt="">
-                                                <div class="ekit-title-and-description">
-                                                    <a>Interior &amp; Exterior Design</a>
-                                                </div>
-                                            </div>
-                                            <div class="elementor-repeater-item-8db363e ekit-marquee-item ticker-item">
-                                                <img loading="lazy" width="30" height="30"
-                                                    src="https://demo.awaikenthemes.com/renovex/wp-content/uploads/2025/11/icon-asterisk.svg"
-                                                    class="attachment-full size-full wp-image-9055" alt="">
-                                                <div class="ekit-title-and-description">
-                                                    <a>Building Design</a>
-                                                </div>
-                                            </div>
-                                            <div class="elementor-repeater-item-7287082 ekit-marquee-item ticker-item">
-                                                <img loading="lazy" width="30" height="30"
-                                                    src="https://demo.awaikenthemes.com/renovex/wp-content/uploads/2025/11/icon-asterisk.svg"
-                                                    class="attachment-full size-full wp-image-9055" alt="">
-                                                <div class="ekit-title-and-description">
-                                                    <a>Construction</a>
-                                                </div>
-                                            </div>
-                                            <div class="elementor-repeater-item-a45e6b9 ekit-marquee-item ticker-item">
-                                                <img loading="lazy" width="30" height="30"
-                                                    src="https://demo.awaikenthemes.com/renovex/wp-content/uploads/2025/11/icon-asterisk.svg"
-                                                    class="attachment-full size-full wp-image-9055" alt="">
-                                                <div class="ekit-title-and-description">
-                                                    <a>Renovation &amp; Remodeling</a>
-                                                </div>
-                                            </div>
-                                            <div class="elementor-repeater-item-3a2a6a8 ekit-marquee-item ticker-item">
-                                                <img loading="lazy" width="30" height="30"
-                                                    src="https://demo.awaikenthemes.com/renovex/wp-content/uploads/2025/11/icon-asterisk.svg"
-                                                    class="attachment-full size-full wp-image-9055" alt="">
-                                                <div class="ekit-title-and-description">
-                                                    <a>Commercial Projects</a>
-                                                </div>
-                                            </div>
-                                            <div class="elementor-repeater-item-30d719c ekit-marquee-item ticker-item">
-                                                <img loading="lazy" width="30" height="30"
-                                                    src="https://demo.awaikenthemes.com/renovex/wp-content/uploads/2025/11/icon-asterisk.svg"
-                                                    class="attachment-full size-full wp-image-9055" alt="">
-                                                <div class="ekit-title-and-description">
-                                                    <a>Interior &amp; Exterior Design</a>
-                                                </div>
-                                            </div>
-                                            <div class="elementor-repeater-item-5d08ec7 ekit-marquee-item ticker-item">
-                                                <img loading="lazy" width="30" height="30"
-                                                    src="https://demo.awaikenthemes.com/renovex/wp-content/uploads/2025/11/icon-asterisk.svg"
-                                                    class="attachment-full size-full wp-image-9055" alt="">
-                                                <div class="ekit-title-and-description">
-                                                    <a>Building Design</a>
-                                                </div>
-                                            </div>
-                                            <div class="elementor-repeater-item-8b9e97e ekit-marquee-item ticker-item">
-                                                <img loading="lazy" width="30" height="30"
-                                                    src="https://demo.awaikenthemes.com/renovex/wp-content/uploads/2025/11/icon-asterisk.svg"
-                                                    class="attachment-full size-full wp-image-9055" alt="">
-                                                <div class="ekit-title-and-description">
-                                                    <a>Construction</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-         
-    </div>
+    
     <!--footer html redirect-->
    <div id="rs-footer"></div>
     <script>

@@ -472,29 +472,54 @@
 
 <body
     class="wp-singular page-template fancy-scrollbar page-template-elementor_header_footer page page-id-723 wp-custom-logo wp-theme-builtup tt-magic-cursor elementor-default elementor-template-full-width elementor-kit-7 elementor-page elementor-page-723">
-    <div id="rs-header"></div>
-    <!--
-    <div class="preloader">
-        <div class="loading-container">
-            <div class="loading"></div>
-            <div id="loading-icon"><img
-                    src="https://demo.awaikenthemes.com/builtup/wp-content/themes/builtup/assets/images/loader.svg"
-                    alt=""></div>
-        </div>
-    </div>-->
-    <div id="magic-cursor">
-        <div id="ball"></div>
-    </div>
-    <!--Header Script-->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            fetch("header.html")
-                .then(res => res.text())
-                .then(data => {
-                    document.getElementById("rs-header").innerHTML = data;
-                });
-        });
-    </script>
+    <!-- <div id="pre-load">
+            <button class="cancel-loader" type="button">Cancel Loader</button>
+            <div id="loader" class="loader">
+                <div class="loader-container">
+                    <div class="loader-icon"><img src="/img/web_icon.png" alt="S"></div>
+                </div>
+            </div>              
+        </div> -->
+		<div class="rs-offcanvas-area">
+	<div class="rsoffwrap"></div>
+	<!-- Canvas Menu start -->
+	 <div id="header"></div>
+<nav class="right_menu_togle" data-lenis-prevent id="mobilemenu">
+	<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				fetch("nav.html")
+					.then(res => res.text())
+					.then(data => {
+						document.getElementById("mobilemenu").innerHTML = data;
+					});
+			});
+		</script>
+</nav>
+</div>
+	<div id="page" class="hfeed site is-page gsap-enable">
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				fetch("header.html")
+					.then(res => res.text())
+					.then(data => {
+						document.getElementById("header").innerHTML = data;
+						document.querySelectorAll('.nav-expander').forEach(function(el) {
+				el.addEventListener('click', function(e) {
+					e.preventDefault(); // stop page jump
+					document.body.classList.toggle('nav-expanded');
+				});
+			});
+			document.querySelectorAll('.rsoffwrap-close').forEach(function(el) {
+				el.addEventListener('click', function(e) {
+					console.log("click");
+					e.preventDefault(); // stop page jump
+					document.body.classList.remove('nav-expanded');
+				});
+			});
+					});
+			});
+		</script>
     <a class="skip-link screen-reader-text" href="#content">
         Skip to content</a>
     <div data-elementor-type="wp-page" data-elementor-id="723" class="elementor elementor-723">
@@ -581,6 +606,20 @@
                                 Client satisfaction and timely delivery remain our core priorities.
                             </p>
                         </div>
+                        <div class="elementor-element elementor-element-455de14 gsap-move-no elementor-widget elementor-widget-rs-button"
+								data-id="455de14" data-element_type="widget" data-widget_type="rs-button.default">
+								<div class="elementor-widget-container">
+									<div class="rs-button style1 unique-61546">
+										<a class="rs-btn anim-dir-" href="#">
+											<span>Descover More
+												<em>
+													<i class="fa-solid fa-arrow-right"></i> <i
+														class="fa-solid fa-arrow-right"></i></em>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
                     </div>
                 </div>
             </div>
@@ -636,6 +675,20 @@
                                 last. Client satisfaction and transparency guide every project.
                             </p>
                         </div>
+                        <div class="elementor-element elementor-element-455de14 gsap-move-no elementor-widget elementor-widget-rs-button"
+								data-id="455de14" data-element_type="widget" data-widget_type="rs-button.default">
+								<div class="elementor-widget-container">
+									<div class="rs-button style1 unique-61546">
+										<a class="rs-btn anim-dir-" href="#">
+											<span>Descover More
+												<em>
+													<i class="fa-solid fa-arrow-right"></i> <i
+														class="fa-solid fa-arrow-right"></i></em>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
                     </div>
 
                 </div>
@@ -714,6 +767,20 @@
                             </p>
                         </div>
                     </div>
+                    <div class="elementor-element elementor-element-455de14 gsap-move-no elementor-widget elementor-widget-rs-button"
+								data-id="455de14" data-element_type="widget" data-widget_type="rs-button.default">
+								<div class="elementor-widget-container">
+									<div class="rs-button style1 unique-61546">
+										<a class="rs-btn anim-dir-" href="#">
+											<span>Descover More
+												<em>
+													<i class="fa-solid fa-arrow-right"></i> <i
+														class="fa-solid fa-arrow-right"></i></em>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
                 </div>
             </div>
         </div>
@@ -769,7 +836,20 @@
                             </p>
                         </div>
                     </div>
-
+                    <div class="elementor-element elementor-element-455de14 gsap-move-no elementor-widget elementor-widget-rs-button"
+								data-id="455de14" data-element_type="widget" data-widget_type="rs-button.default">
+								<div class="elementor-widget-container">
+									<div class="rs-button style1 unique-61546">
+										<a class="rs-btn anim-dir-" href="#">
+											<span>Descover More
+												<em>
+													<i class="fa-solid fa-arrow-right"></i> <i
+														class="fa-solid fa-arrow-right"></i></em>
+											</span>
+										</a>
+									</div>
+								</div>
+							</div>
                 </div>
 
                 <!-- RIGHT SIDE : IMAGE -->
@@ -842,6 +922,8 @@
             };
             //# sourceURL=contact-form-7-js-before
         </script>
+        <!-- this link is nav script -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="/js/about_js/index.js" id="contact-form-7-js"></script>
         <script src="/js/about_js/SmoothScroll.js" id="SmoothScroll-js"></script>
         <script src="/js/about_js/gsap.min.js" id="gsap-js"></script>

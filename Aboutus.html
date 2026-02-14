@@ -464,31 +464,54 @@
 </head>
 <body
     class="wp-singular page-template page-template-elementor_header_footer page page-id-723 wp-custom-logo fancy-scrollbar wp-theme-builtup tt-magic-cursor elementor-default elementor-template-full-width elementor-kit-7 elementor-page elementor-page-723">
-    <div id="rs-header"></div>
-    <!--
-    <div class="preloader">
-        <div class="loading-container">
-            <div class="loading"></div>
-            <div id="loading-icon"><img
-                    src="https://demo.awaikenthemes.com/builtup/wp-content/themes/builtup/assets/images/loader.svg"
-                    alt=""></div>
-        </div>
-    </div>-->
-    <div id="magic-cursor">
-        <div id="ball"></div>
-    </div>
-    <!--Header Script-->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            fetch("header.html")
-                .then(res => res.text())
-                .then(data => {
-                    document.getElementById("rs-header").innerHTML = data;
-                });
-        });
-    </script>
-    <a class="skip-link screen-reader-text" href="#content">
-        Skip to content</a>
+  <!-- <div id="pre-load">
+            <button class="cancel-loader" type="button">Cancel Loader</button>
+            <div id="loader" class="loader">
+                <div class="loader-container">
+                    <div class="loader-icon"><img src="/img/web_icon.png" alt="S"></div>
+                </div>
+            </div>              
+        </div> -->
+		<div class="rs-offcanvas-area">
+	<div class="rsoffwrap"></div>
+	<!-- Canvas Menu start -->
+	 <div id="header"></div>
+<nav class="right_menu_togle" data-lenis-prevent id="mobilemenu">
+	<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				fetch("nav.html")
+					.then(res => res.text())
+					.then(data => {
+						document.getElementById("mobilemenu").innerHTML = data;
+					});
+			});
+		</script>
+</nav>
+</div>
+	<div id="page" class="hfeed site is-page gsap-enable">
+		
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				fetch("header.html")
+					.then(res => res.text())
+					.then(data => {
+						document.getElementById("header").innerHTML = data;
+						document.querySelectorAll('.nav-expander').forEach(function(el) {
+				el.addEventListener('click', function(e) {
+					e.preventDefault(); // stop page jump
+					document.body.classList.toggle('nav-expanded');
+				});
+			});
+			document.querySelectorAll('.rsoffwrap-close').forEach(function(el) {
+				el.addEventListener('click', function(e) {
+					console.log("click");
+					e.preventDefault(); // stop page jump
+					document.body.classList.remove('nav-expanded');
+				});
+			});
+					});
+			});
+		</script>
     <div data-elementor-type="wp-page" data-elementor-id="723" class="elementor elementor-723">
         <div class="elementor-element elementor-element-16d5d11 e-con-full e-flex e-con e-parent" data-id="16d5d11"
             data-element_type="container" data-e-type="container" data-settings='{"background_background":"classic"}'>
